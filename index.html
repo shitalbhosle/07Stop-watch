@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="/dist/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="h-[100vh] flex flex-col justify-center items-center font-roboto">
+    <h1 class="text-5xl mb-8 font-bold text-orange-400">StopWatch</h1>
+
+    <div class="flex flex-col justify-center items-center px-32 py-24 bg-gradient-to-r from-[#f12711] to-[#f5af19] rounded-3xl">
+        <h1 class="text-9xl mb-10 text-yellow-100" id="time">00:00:00</h1>
+        <div class="flex gap-4">
+            <button class="px-4 py-2 bg-yellow-100 text-orange-400 text-2xl rounded-md" type="button" id="start" onClick="start(true)">Start</button>
+
+            <button class="px-4 py-2 bg-yellow-100 text-2xl text-orange-400 rounded-md" type="button" id="stop" onClick="stop()">Stop</button>
+
+            <button class="px-4 py-2 bg-yellow-100 text-2xl text-orange-400 rounded-md" type="button" id="reset" onClick="reset()">Reset</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
